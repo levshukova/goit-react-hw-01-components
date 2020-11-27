@@ -1,0 +1,17 @@
+.item {
+  padding: 10px;
+}
+
+.item:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
+.label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.percentage {
+  display: block;
+  font-size: 16px;
+}

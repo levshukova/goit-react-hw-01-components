@@ -1,0 +1,34 @@
+.statistics {
+  padding: 20px 0px 0px 0px;
+  margin-bottom: 40px;
+
+  width: 300px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.title {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: gray;
+}
+
+.statList {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+
+  list-style: none;
+  padding-left: 0;
+  border-top: 1px solid gray;
+  background-color: rgb(164, 144, 187);
+  color: #ffffff;
+}
