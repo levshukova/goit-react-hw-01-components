@@ -1,8 +1,14 @@
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
+import Stats from './Stats';
 
-export default function Profile(props) {
-  const { name, tag, location, avatar, stats } = props;
+export default function Profile({
+  name = 'Unknown',
+  tag,
+  location,
+  avatar = 'https://i.imgur.com/FFmb6vR.png',
+  stats,
+}) {
   return (
     <div className={s.profile}>
       <div className={s.description}>
@@ -11,21 +17,7 @@ export default function Profile(props) {
         <p className={s.tag}>@{tag}</p>
         <p className={s.location}>{location}</p>
       </div>
-
-      <ul className={s.stats}>
-        <li>
-          <span className={s.label}>Followers</span>
-          <span className={s.quantity}>{stats.followers}</span>
-        </li>
-        <li>
-          <span className={s.label}>Views</span>
-          <span className={s.quantity}>{stats.views}</span>
-        </li>
-        <li>
-          <span className={s.label}>Likes</span>
-          <span className={s.quantity}>{stats.likes}</span>
-        </li>
-      </ul>
+      <Stats {...stats} />
     </div>
   );
 }
@@ -35,5 +27,4 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf(PropTypes.number).isRequired,
 };

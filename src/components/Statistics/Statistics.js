@@ -4,6 +4,7 @@ import s from './Statistics.module.css';
 
 export default function Statistics(props) {
   const { title = 'Upload stats', stats } = props;
+  if (stats.length === 0) return null;
   return (
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}

@@ -1,8 +1,10 @@
 import TransactionHistoryItem from './TransactionHistoryItem';
+
 import PropTypes from 'prop-types';
 import s from './TransactionHistory.module.css';
 
 export default function TransactionHistory({ items }) {
+  if (items.lenght === 0) return null;
   return (
     <table className={s.transactionHistory}>
       <thead>

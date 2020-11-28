@@ -1,0 +1,30 @@
+.stats {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  border-top: 1px solid #c0c4ca;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.stats > li {
+  display: block;
+  flex-direction: column;
+  background-color: rgb(223, 228, 230);
+
+  width: 33%;
+  text-align: center;
+  padding: 18px 5px;
+}
+.stats > li:not(:last-child) {
+  border-right: 2px solid #c0c4ca;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  color: rgb(133, 144, 145);
+  margin-bottom: 5px;
+}

@@ -1,5 +1,3 @@
-import { func } from 'prop-types';
-
 import s from './TransactionHistoryItem.module.css';
 import PropTypes from 'prop-types';
 
